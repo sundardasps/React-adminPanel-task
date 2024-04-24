@@ -1,18 +1,21 @@
-
 import Footer from "./Footer";
-import DetailBoxes  from "./DetailBoxes";
-import {details}  from "../utils/data";
-
+import DetailBoxes from "./DetailBoxes";
+import { details } from "../utils/data";
 
 function Details() {
   return (
-    
     <div className="flex flex-col justify-between  w-screen  h-max      border-[#FA9E93] border-l-2">
-      <div className=" min-w-max  mx-3  ">
-        <h3 className="   font-medium   text-4xl ">user per country</h3>
+      <div className=" min-w-max  mx-3 mb-8 ">
+        <h3 className="   font-medium   text-2xl uppercase ">
+          user per country
+        </h3>
         <p className="my-2">Select by Country</p>
         <div className=" flex   rounded-lg">
-          <input style={{borderRadius:"15px"}} className='pl-8 w-60 h-10 border border-[#C91416] bg-[#E6E6E6]' type="text" />
+          <input
+            style={{ borderRadius: "15px" }}
+            className="pl-8 w-52 hover:bg-white cursor-pointer h-10 border border-[#C91416] bg-[#E6E6E6]"
+            type="text"
+          />
           <svg
             width="20"
             height="21"
@@ -31,19 +34,15 @@ function Details() {
         </div>
       </div>
       <div className="lg:grid lg:grid-cols-3 lg:grid-rows-4 lg:gap-3   h-full   m-3 ">
-      {
-        details.map((data,index)=>(
-
+        {details.map((data, index) => (
           <DetailBoxes key={index} data={data} />
-        ))
-      }
+        ))}
       </div>
 
       <div className="h-[7rem] md:h-[5rem]">
-      <Footer />
+        <Footer />
       </div>
     </div>
-      
   );
 }
 

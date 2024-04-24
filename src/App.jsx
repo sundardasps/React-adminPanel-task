@@ -9,7 +9,7 @@ import Details from "./components/Details";
 
 function App() {
   return (
-    <div className=" mx-auto">
+    <div className="mx-auto">
       <Navbar />
       <div className="flex gap-4 mx-5 h-screen">
         <div className="hidden md:block h-[37.5rem]">
