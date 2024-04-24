@@ -126,7 +126,7 @@ export default function Navbar() {
     { openNav &&  
     
        <div 
-        className={`absolute top-0 z-50 bg-black md:bg-opacity-0 bg-opacity-40 text-black h-max  w-screen`}>
+        className={`absolute top-0 z-50 bg-black md:bg-white  text-black h-max  w-screen`}>
     
         <svg
         
@@ -152,7 +152,7 @@ export default function Navbar() {
           />
         </svg>
          
-         <div className="m-10 sm:block md:hidden">
+         <div className="w-[290px] sm:block md:hidden mx-auto my-5   ">
           <Sidebar/>
 
          </div>
